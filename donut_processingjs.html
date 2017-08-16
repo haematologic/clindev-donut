@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Processing.js Test</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.8/processing.min.js"></script>
+<script type="application/processing" data-processing-target="pjs">
+    void setup(){}
+    void draw() {
+      fill(#FFB6C1);
+      e(50);
+      fill(#CCCCCC);
+      e(20);
+    }
+    void e(int a){
+      ellipse(50,50,a,a);
+    }
+</script>
+</head>
+<body>
+<h1>Processing.js Test</h1>
+<p>Demonstrates the syntax for creating a two-dimensional donut.</p>
+<canvas id="pjs"></canvas>
+</body>
+</html>
