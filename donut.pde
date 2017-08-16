@@ -1,0 +1,1 @@
+fill(#FFB6C1);ellipse(50,50,55,55);fill(#CCCCCC);ellipse(50,50,25,25);
