@@ -44,7 +44,7 @@ And here is **Python 3** answer (75 bytes) that prints a donut bitmap – depend
 
 <pre>d=[99,93,54,42];print('\n'.join(['{:07b}'.format(b) for b in d+d[-2::-1]]))</pre>
 
-Editable **[here](https://repl.it/KQc8)**
+Editable **[here](https://repl.it/KQc8/2)**
 
 Output:
 
