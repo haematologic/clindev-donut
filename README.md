@@ -46,6 +46,16 @@ And here is **Python 3** answer (75 bytes) that prints a donut bitmap – depend
 
 Editable **[here](https://repl.it/KQc8)**
 
+Output:
+
+<pre>0011100
+0100010
+1001001
+1010101
+1001001
+0100010
+0011100</pre>
+
 This prints a donut in a 7x7 grid by parsing a string of ints into their binary equivalent.
 For each int '{:07b}'.format(int) returns the 0-padded 7-bit long binary representation of the int.
 To save space, the string is made of two arrays 'd', concatenated d+d[-2::-1].
