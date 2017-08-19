@@ -1,5 +1,5 @@
 
-### Clinical Developers Club – Donut challenge###
+### Clinical Developers Club – Donut challenge ###
 
 **Task** – set by [@stuartbman](https://github.com/stuartbman)
 
@@ -39,3 +39,14 @@ Super-minimal donut (43 bytes)
 <pre>fill(200);strokeWeight(3);ellipse(9,9,9,9);</pre>
 
 This one is super-miniature, covered in 99% cocoa dark choc… http://studio.sketchpad.cc/BzHjsPgmJx
+
+And here is **Python 3** answer (75 bytes) that prints a donut bitmap – depending on your preferred resolution and if non vectors allowed!
+
+<pre>d=[28,34,73,85];print('\n'.join(['{:07b}'.format(b) for b in d+d[-2::-1]]))</pre>
+
+Editable **[here](https://repl.it/KQc8)**
+
+This prints a donut in a 7x7 grid by parsing a string of ints into their binary equivalent.
+For each int '{:07b}'.format(int) returns the 0-padded 7-bit long binary representation of the int.
+To save space, the string is made of two arrays 'd', concatenated d+d[-2::-1].
+The second half the string is formed by is an inverse slice of the first [::-1] and sliced minus the first char [-2::] to avoid repeating the middle '0'.
